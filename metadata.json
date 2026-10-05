@@ -1,0 +1,10 @@
+{
+  "name": "Remix Bandz: GreenRoom",
+  "description": "The ultimate all-in-one OS for bands. Manage chat, setlists, gigs, finances, and merch with integrated Gemini AI intelligence.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
