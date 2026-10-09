@@ -1451,9 +1451,6 @@ export default function App() {
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-purple-950/30" />
           
           <div className="relative p-6 space-y-2 z-10">
-            <span className="text-[9px] font-bold text-purple-400 uppercase tracking-widest font-mono bg-purple-950/80 border border-purple-500/30 px-2.5 py-0.5 rounded-md inline-block">
-              {(TAB_HEADER_CONFIG[activeTab] || TAB_HEADER_CONFIG.scheduler).badge}
-            </span>
             <h2 className="text-2xl font-black text-white font-display tracking-tight uppercase">
               {(TAB_HEADER_CONFIG[activeTab] || TAB_HEADER_CONFIG.scheduler).title}
             </h2>

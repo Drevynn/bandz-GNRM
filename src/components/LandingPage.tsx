@@ -219,21 +219,15 @@ export default function LandingPage({ onEnterDemo, onEnterLogin }: LandingPagePr
           <div className="hidden md:flex items-center gap-8">
             <button 
               onClick={() => scrollToSection('landing-how-it-works')}
-              className="text-xs font-bold text-slate-300 hover:text-purple-300 transition-colors cursor-pointer flex items-center gap-2 group"
+              className="text-xs font-bold text-slate-300 hover:text-purple-300 transition-colors cursor-pointer"
             >
-              <span>How It Works</span>
-              <span className="text-[9px] bg-purple-500/15 border border-purple-500/30 text-purple-300 px-2 py-0.5 rounded-full font-mono font-bold group-hover:bg-purple-500/25 transition-colors">
-                4 Steps
-              </span>
+              How It Works
             </button>
             <button 
               onClick={() => scrollToSection('landing-pricing')}
-              className="text-xs font-bold text-slate-300 hover:text-amber-300 transition-colors cursor-pointer flex items-center gap-1.5"
+              className="text-xs font-bold text-slate-300 hover:text-amber-300 transition-colors cursor-pointer"
             >
-              <span>Pricing</span>
-              <span className="text-[9px] bg-amber-500/10 border border-amber-500/20 text-amber-400 px-1.5 py-0.5 rounded font-mono font-bold">
-                14-Day Free
-              </span>
+              Pricing
             </button>
             <button 
               onClick={() => scrollToSection('landing-features')}
@@ -243,13 +237,10 @@ export default function LandingPage({ onEnterDemo, onEnterLogin }: LandingPagePr
             </button>
             <button 
               onClick={() => setLegalDoc('privacy')}
-              className="text-xs font-bold text-slate-400 hover:text-purple-300 transition-colors cursor-pointer flex items-center gap-1"
+              className="text-xs font-bold text-slate-400 hover:text-purple-300 transition-colors cursor-pointer"
               title="View Google-Verified Privacy Policy"
             >
-              <span>Privacy</span>
-              <span className="text-[8.5px] bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 px-1 py-0.2 rounded font-mono font-bold">
-                Google
-              </span>
+              Privacy
             </button>
             <button 
               onClick={() => setLegalDoc('terms')}
@@ -303,17 +294,15 @@ export default function LandingPage({ onEnterDemo, onEnterLogin }: LandingPagePr
             >
               <button
                 onClick={() => scrollToSection('landing-how-it-works')}
-                className="w-full text-left px-3 py-2 text-xs font-bold text-purple-300 hover:bg-purple-500/10 rounded-lg transition-colors flex items-center justify-between"
+                className="w-full text-left px-3 py-2 text-xs font-bold text-purple-300 hover:bg-purple-500/10 rounded-lg transition-colors"
               >
-                <span>How It Works</span>
-                <span className="text-[9px] bg-purple-500/20 px-2 py-0.5 rounded-full font-mono">4 Steps</span>
+                How It Works
               </button>
               <button
                 onClick={() => scrollToSection('landing-pricing')}
-                className="w-full text-left px-3 py-2 text-xs font-bold text-amber-300 hover:bg-amber-500/10 rounded-lg transition-colors flex items-center justify-between"
+                className="w-full text-left px-3 py-2 text-xs font-bold text-amber-300 hover:bg-amber-500/10 rounded-lg transition-colors"
               >
-                <span>Pricing & Plans</span>
-                <span className="text-[9px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded-full font-mono">Free Trial</span>
+                Pricing & Plans
               </button>
               <button
                 onClick={() => scrollToSection('landing-features')}
@@ -332,7 +321,7 @@ export default function LandingPage({ onEnterDemo, onEnterLogin }: LandingPagePr
                   <Phone size={13} className="text-emerald-400" />
                   <span>Support Hotline & Wiki</span>
                 </div>
-                <span className="text-[9px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-mono font-bold">(951) 594-5105</span>
+                <span className="text-[10px] text-emerald-400/80 font-mono">(951) 594-5105</span>
               </button>
               <div className="grid grid-cols-2 gap-2 pt-1 border-t border-slate-900/60">
                 <button
@@ -389,7 +378,7 @@ export default function LandingPage({ onEnterDemo, onEnterLogin }: LandingPagePr
           transition={{ duration: 0.5 }}
           className="space-y-6 flex flex-col items-center"
         >
-          {/* Hero Emblem Showcase - Moved to top of page */}
+          {/* Hero Emblem Showcase */}
           <div className="flex flex-col items-center justify-center relative pt-2 pb-2">
             <div className="relative group flex items-center justify-center">
               {/* Subtle ambient backglow */}
@@ -402,25 +391,8 @@ export default function LandingPage({ onEnterDemo, onEnterLogin }: LandingPagePr
                 className="relative z-10 w-52 sm:w-64 md:w-72 h-52 sm:h-64 md:h-72 object-contain drop-shadow-[0_20px_35px_rgba(0,0,0,0.7)] group-hover:scale-105 transition-transform duration-700"
               />
             </div>
-
-            {/* Stage HUD Status Pill */}
-            <div className="mt-4 flex flex-wrap items-center justify-center gap-3 bg-slate-900/60 backdrop-blur-md border border-slate-800/80 px-4 py-1.5 rounded-full shadow-lg">
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-[11px] font-bold text-white uppercase tracking-wider font-display">LIVE TOUR STAGE HUD ACTIVE</span>
-              </div>
-              <span className="hidden sm:inline text-slate-700">•</span>
-              <span className="text-[10px] text-slate-400 font-mono hidden sm:inline">Setlists, tempo pacing & cost splits</span>
-              <span className="text-slate-700">•</span>
-              <span className="text-[10px] font-mono font-bold text-purple-300 bg-purple-500/20 border border-purple-500/30 px-2.5 py-0.5 rounded-full">
-                100% SECURE NODE
-              </span>
-            </div>
           </div>
 
-          <span className="text-[10px] font-bold text-purple-400 uppercase tracking-widest bg-purple-500/10 border border-purple-500/20 px-3 py-1 rounded-full inline-block">
-            STATION HEADQUARTERS FOR MUSICIANS
-          </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-[1.1] font-display">
             The Ultimate Command Center <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-violet-300 to-amber-400">
@@ -452,8 +424,7 @@ export default function LandingPage({ onEnterDemo, onEnterLogin }: LandingPagePr
       {/* Feature Showcase Grid */}
       <section className="max-w-7xl mx-auto px-6 lg:px-12 py-12 relative z-10 scroll-mt-24" id="landing-features">
         <div className="text-center mb-12">
-          <h2 className="text-xs uppercase font-bold tracking-widest text-purple-400 mb-2">Engine Modules</h2>
-          <p className="text-2xl font-bold text-slate-100">Engineered Specifically for Music Crews</p>
+          <p className="text-2xl md:text-3xl font-black text-white uppercase tracking-tight font-display">Engineered Specifically for Music Crews</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -477,9 +448,6 @@ export default function LandingPage({ onEnterDemo, onEnterLogin }: LandingPagePr
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 brightness-85 group-hover:brightness-100"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent" />
-                  <span className="absolute top-3 left-3 text-[9px] font-mono font-bold uppercase tracking-wider bg-slate-950/80 backdrop-blur-md border border-purple-500/30 text-purple-300 px-2.5 py-1 rounded-md">
-                    {feat.tag}
-                  </span>
                   <div className="absolute bottom-3 left-3 bg-purple-600/90 backdrop-blur-sm p-2 rounded-xl text-white shadow-md">
                     <Icon size={18} />
                   </div>
@@ -500,12 +468,6 @@ export default function LandingPage({ onEnterDemo, onEnterLogin }: LandingPagePr
       {/* How It Works Section */}
       <section className="max-w-7xl mx-auto px-6 lg:px-12 py-16 relative z-10 scroll-mt-24" id="landing-how-it-works">
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-          <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/25 px-3 py-1 rounded-full">
-            <ListOrdered size={13} className="text-purple-400" />
-            <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-purple-300">
-              OPERATIONAL WORKFLOW
-            </span>
-          </div>
           <h2 className="text-3xl md:text-4xl font-black text-white uppercase tracking-tight font-display">
             How Bandz Works
           </h2>
@@ -535,9 +497,6 @@ export default function LandingPage({ onEnterDemo, onEnterLogin }: LandingPagePr
               </div>
 
               <div>
-                <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-slate-500 block mb-1">
-                  ONBOARDING & ROSTER
-                </span>
                 <h3 className="text-base font-bold text-slate-100 group-hover:text-purple-300 transition-colors font-display">
                   Set Up Band & Crew
                 </h3>
@@ -573,9 +532,6 @@ export default function LandingPage({ onEnterDemo, onEnterLogin }: LandingPagePr
               </div>
 
               <div>
-                <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-slate-500 block mb-1">
-                  CALENDAR DISPATCH
-                </span>
                 <h3 className="text-base font-bold text-slate-100 group-hover:text-emerald-300 transition-colors font-display">
                   Schedule Any Event
                 </h3>
@@ -611,9 +567,6 @@ export default function LandingPage({ onEnterDemo, onEnterLogin }: LandingPagePr
               </div>
 
               <div>
-                <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-slate-500 block mb-1">
-                  TIMING & PROMOTION
-                </span>
                 <h3 className="text-base font-bold text-slate-100 group-hover:text-violet-300 transition-colors font-display">
                   Build Sets & AI Press
                 </h3>
@@ -649,9 +602,6 @@ export default function LandingPage({ onEnterDemo, onEnterLogin }: LandingPagePr
               </div>
 
               <div>
-                <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-slate-500 block mb-1">
-                  TICKETS & SETTLEMENT
-                </span>
                 <h3 className="text-base font-bold text-slate-100 group-hover:text-amber-300 transition-colors font-display">
                   Sell Tickets & Split Pay
                 </h3>
@@ -700,8 +650,7 @@ export default function LandingPage({ onEnterDemo, onEnterLogin }: LandingPagePr
       {/* Interactive Pricing Toggle & Grid */}
       <section className="max-w-7xl mx-auto px-6 lg:px-12 py-16 relative z-10 scroll-mt-24" id="landing-pricing">
         <div className="text-center space-y-4 mb-10">
-          <h2 className="text-xs uppercase font-bold tracking-widest text-purple-400">Honest, Predictable Pricing</h2>
-          <p className="text-2xl font-black text-slate-100 uppercase">Select Your Operational Tier</p>
+          <p className="text-2xl md:text-3xl font-black text-slate-100 uppercase font-display">Select Your Operational Tier</p>
           
           {/* Billing Switcher */}
           <div className="flex items-center justify-center gap-3 pt-2">
@@ -752,9 +701,6 @@ export default function LandingPage({ onEnterDemo, onEnterLogin }: LandingPagePr
                       className="w-full h-full object-cover object-center opacity-40 group-hover:opacity-70 group-hover:scale-105 transition-all duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent" />
-                    <span className="absolute bottom-2 left-6 text-[9px] font-mono font-bold uppercase tracking-widest text-purple-300 bg-slate-950/70 border border-purple-500/30 px-2 py-0.5 rounded">
-                      {plan.tag}
-                    </span>
                   </div>
 
                   <div>
